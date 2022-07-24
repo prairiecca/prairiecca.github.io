@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+
+:root {
+  --color-red: #cd2500;
+  --color-gold: #ffcc00;
+
+  --color-white: white;
+  --color-black: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.Page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: var(--color-black);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0, 0.05);
+  font-size: 22px;
+  color: white;
+
+  & .img-holder {
+    display: flex;
+    & img {
+      width: 96px;
+      height: 96px;
+      border-radius: 48px;
+    }
+
+    & span {
+      align-self: center;
+      text-transform: capitalize;
+      font-size: 24px;
+      padding-left: 16px;
+    }
+  }
+
+  & .link-holder {
+    display: flex;
+    & a {
+      align-self: center;
+      text-decoration: none;    
+      text-transform: capitalize;
+      color:inherit;
+      padding-left: 16px;
+    }
+  }
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: black;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0, 0.05);
+  font-size: 48px;
+  color: white;
+  & .img-holder {
+    display: flex;
+    justify-content: center;
+    padding:32px;
+    & img {
+      width: 240px;
+      height: 240px;
+      border-radius: 120px;
+    }
+  }
+
+  & .hashtags {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    & * {
+      align-self: center;
+    }
+  }
+
+  & .acknowledgements {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #aaa;
+    & * {
+      align-self: center;
+    }
+    & a {
+      color:inherit;
+    }
+  }
+
+  & .link-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    color: #aaa;
+    & * {
+      align-self: center;
+    }
+    & a {
+      color:inherit;
+    }
+
+    & h2 {
+      margin: 8px 0px;
+    }
+    padding-bottom: 8px;
+  }
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  & .MuiButtonBase-root {
+    background-color: var(--color-red);
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  & > :not(.hero-image) {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1000px;
+    align-self: center;
+  }
+
+  & .summary {
+    width: calc(100% - 64px);
+    & img {
+      width: 300px;
+    }
+  }
+
+  & p {
+    line-height: 200%;
+    padding-bottom: 22px;
+  }
+
+  & .hero-image {
+    min-height: 220px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    & .hero-image-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      & h1 {
+        margin-top:64px;
+        text-shadow: 2px 2px 10px black;
+      }
+      & * {
+        align-self: center;
+      }
+    }
+  }
+
+  & li {
+    padding-bottom: 24px;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media (max-width: 930px) {
+  .sm-col {
+    flex-direction: column;
+  }
+}
+
+.PermitMap {
+  &-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & * {
+      align-self: center;
+    }
+    & svg {
+      width: 100%;
+    }
+    & .legend {
+      display: inline-block;
+      width: 32px;
+      height: 14px;
+      border: 1px solid var(--color-black);
+      margin-bottom: -2px;
+      &.valid {
+        background-color: var(--color-gold);
+      }
+
+      &.invalid {
+        background-color: var(--color-red);
+      }
+    }
+  }
+}
