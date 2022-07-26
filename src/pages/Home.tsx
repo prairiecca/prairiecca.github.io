@@ -1,6 +1,5 @@
 import { Button } from '@material-ui/core';
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { setPageTitle } from '../app/utils';
 import HeroImage from '../components/HeroImage';
 import PermitMap from '../components/PermitMap';
@@ -18,9 +17,11 @@ export default ({...props}) => {
       </HeroImage>
       <div className="summary">
         <p>
-          Prairie CCW classes offer a comprehensive overview of the ins and outs of self defense, Wisconsin's concealed carry
-          laws, and safe firearms usage. After taking our fully featured 6 hour course, participants will be fully qualified
-          to apply for Wisconsin concealed carry license. Course contents include the following:
+          Heroes' Guild Community Defense offers a comprehensive class on the ins and outs of self defense, Wisconsin's 
+          concealed carry laws, personal and community safety, and safe firearms usage. After taking our fully featured 
+          6 hour course, participants will be fully qualified to apply for Wisconsin concealed carry license, and attain
+          a greater understanding of how to keep themselves and others safe around firearms. Course contents include the 
+          following:
         </p>
         <ul style={{maxWidth:'650px'}}>
           <li>
@@ -61,8 +62,7 @@ export default ({...props}) => {
         </p>
         <PermitMap/>
       </div>
-      <HeroImage bgImage={bgLarge} innerStyle={{justifyContent:'center'}}>
-      </HeroImage>
+      <HeroImage bgImage={bgLarge} />
     </div>
   )
 }

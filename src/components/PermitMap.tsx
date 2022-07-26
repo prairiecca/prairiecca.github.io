@@ -2,30 +2,30 @@
 import UsaMap from "react-usa-map";
 
 const NotValidCustom = {
-  WI: {fill: "#fcecac"},
-  WA: {fill: "#cd2500"},
-  OR: {fill: "#cd2500"},
-  CA: {fill: "#cd2500"},
-  NM: {fill: "#cd2500"},
-  MN: {fill: "#cd2500"},
-  IL: {fill: "#cd2500"},
-  SC: {fill: "#cd2500"},
-  HI: {fill: "#cd2500"},
-  PR: {fill: "#cd2500"},
-  NY: {fill: "#cd2500"},
-  CT: {fill: "#cd2500"},
-  MA: {fill: "#cd2500"},
-  NJ: {fill: "#cd2500"},
-  MD: {fill: "#cd2500"},
-  RI: {fill: "#cd2500"},
-  DE: {fill: "#cd2500"},
-  DC2: {fill: "#cd2500"},
+  WI: {fill: "#9fc996"},
+  WA: {fill: "#080F08"},
+  OR: {fill: "#080F08"},
+  CA: {fill: "#080F08"},
+  NM: {fill: "#080F08"},
+  MN: {fill: "#080F08"},
+  IL: {fill: "#080F08"},
+  SC: {fill: "#080F08"},
+  HI: {fill: "#080F08"},
+  PR: {fill: "#080F08"},
+  NY: {fill: "#080F08"},
+  CT: {fill: "#080F08"},
+  MA: {fill: "#080F08"},
+  NJ: {fill: "#080F08"},
+  MD: {fill: "#080F08"},
+  RI: {fill: "#080F08"},
+  DE: {fill: "#080F08"},
+  DC2: {fill: "#080F08"},
 }
 export default ()=> {
   return (
     <p className="PermitMap-holder">
       <UsaMap
-        defaultFill='#ffcc00'
+        defaultFill='#1c4014'
         customize={NotValidCustom}
       />
       <div>

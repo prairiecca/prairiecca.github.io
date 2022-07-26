@@ -8,7 +8,7 @@ export default ({...props}) => {
     <div className="Footer">
 
       <div className="link-holder">
-        <span>© 2022 Prairie Concealed Carry Classes</span>
+        <span>© 2022 Heroes' Guild Community Defense</span>
       </div>
       <div className="link-holder">
         <h2>Contact</h2>
@@ -24,7 +24,7 @@ export default ({...props}) => {
         <span>
           <a target="_blank" href="https://icons8.com/icon/10091/barley">Barley</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </span>
-        <span>"Tractor on a Small Farm" by IFPRI is licensed under CC BY-NC-ND 2.0</span>
+        <span>"Restormel Castle Interior. Panorama. Nikon D3100. DSC_0651" by Robert.Pittman is licensed under CC BY-ND 2.0.</span>
       </div>
     </div>
   )

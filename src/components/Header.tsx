@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../img/logo.png';
+import logo from '../img/logo.svg';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
@@ -8,7 +8,7 @@ export default ({...props}) => {
     <div className="Header sm-col">
       <div className="img-holder">
         <img src={logo}/>
-        <span>Prairie Concealed Carry Classes</span>
+        <span>Heroes' Guild Community Defense Classes</span>
       </div>
       <div className="link-holder">
         <HashLink to="/#about">About</HashLink>
